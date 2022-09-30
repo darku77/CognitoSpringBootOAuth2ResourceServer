@@ -1,0 +1,10 @@
+debug: false
+server:
+  servlet:
+    context-path: /api
+spring:
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri:
