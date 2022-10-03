@@ -1,5 +1,7 @@
 package com.darku.security.poc.controller;
 
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,6 +14,7 @@ public class AppController {
 
     @GetMapping("/protected/main")
     public String main() {
+        final SecurityContext context = SecurityContextHolder.getContext();
         return "PROTECTED CONTROLLER";
     }
 
