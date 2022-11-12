@@ -7,4 +7,4 @@ spring:
     oauth2:
       resource-server:
         jwt:
-          issuer-uri:
+          issuer-uri: https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_EyHbp5FDG
